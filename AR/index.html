@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello, WebVR! - A-Frame</title>
+  <meta name="description" content="Hello, WebVR! - A-Frame">
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+  <a-assets>
+    <a-asset-item id="test1" src="assets/teleporter/scene.gltf"></a-asset-item>
+    <a-asset-item id="test2" src="assets/medieval_sci-fi_pillar/scene.gltf"></a-asset-item>
+    <a-asset-item id="test3" src="assets/sci-fi_coin/scene.gltf"></a-asset-item>
+
+  </a-assets>
+  <!--<a-entity id="test1" position="0 0 -5.0">-->
+    <!--<a-plane color="black" height="4" width="4" position="0.5 1.5 0.9" geometry="width: 2; height: 2;" rotation="0 45 0"></a-plane>-->
+  <!--<a-entity scale=".008 .008 .008" gltf-model="#test1"></a-entity>-->
+  <!--</a-entity>-->
+
+  <a-entity id="test2" position="0 0 -5.0">
+    <a-plane color="black" height="4" width="4" position="0.5 1.0 0.2" geometry="width: 2; height: 2;" rotation="0 0 0"></a-plane>
+    <a-entity scale=".33 .33 .33" gltf-model="#test2" position="0 0 0"></a-entity>
+    <a-entity scale=".33 .33 .33" gltf-model="#test2" position="2.3 0 0"></a-entity>
+
+  </a-entity>
+
+
+  <!--<a-entity id="test3" position="0 0 -5.0">-->
+    <!--<a-plane color="black" height="4" width="4" position="0.5 1.0 0.9" geometry="width: 1.5; height: 1.5;" rotation="0 25 0"></a-plane>-->
+    <!--<a-entity scale=".04 .04 .04" gltf-model="#test3" position="0 -1.0 0"></a-entity>-->
+  <!--</a-entity>-->
+
+</a-scene>
+</body>
+
+
+<!--<script src="app.js"></script>-->
+
+</html>

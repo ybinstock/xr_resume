@@ -1,0 +1,49 @@
+Unable to find a surface. Try moving to the side or repositioning your phone.
+Tap a location to place the [name of object to be placed].
+Try turning on more lights and moving around.
+Try moving your phone slower.
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Instructions</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame">
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color: #ECECEC">
+
+    FOR AR
+    <a-box color="white" depth=".1" height="1" width="3" rotation="0 0 0" position="0 2 -4" opacity="0">
+      <a-entity text="align: center; color:black;value: Please scan a nearby table"></a-entity>
+    </a-box>
+
+    <a-box color="white" depth=".1" height="1" width="3" rotation="0 0 0" position="0 2 -4" opacity="0">
+      <a-entity text="align: center; color:black;value: Scanning..."></a-entity>
+    </a-box>
+
+    <a-box color="white" depth=".1" height="1" width="3" rotation="0 0 0" position="0 2 -4" opacity="0">
+      <a-entity text="align: center; color:black;value: Please try another surface (if fail)"></a-entity>
+    </a-box>
+
+    <a-box color="white" depth=".1" height="1" width="3" rotation="0 0 0" position="0 2 -4" opacity="0">
+      <a-entity text="align: center; color:black;value: Tap screen to place model (if success)"></a-entity>
+    </a-box>
+
+    <a-box color="white" depth=".1" height="1" width="3" rotation="0 0 0" position="0 2 -4" opacity="0">
+      <a-entity text="align: center; color:black;value: Walk around the model or rotate it with your finger"</a-entity>
+    </a-box>
+
+    FOR VR
+
+    <a-box color="white" depth=".1" height="1" width="3" rotation="0 0 0" position="0 2 -4" opacity="0">
+        <a-entity text="align: center; color:black;value: Walk around the model or rotate it with your hand"</a-entity>
+    </a-box>
+
+  </a-scene>
+</body>
+
+</html>
